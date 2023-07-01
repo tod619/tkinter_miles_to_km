@@ -13,11 +13,16 @@ my_label.pack()
 
 def button_clicked():
     # print("I got clicked")
-    my_label.config(text="The button was clicked")
+    new_text = input.get()
+    my_label.config(text=new_text)
 
 
 # Create a btn
 button = tkinter.Button(text="Click Me", command=button_clicked)
 button.pack()
+
+# Create an entry compontent (input)
+input = tkinter.Entry(width=10)
+input.pack()
 
 window.mainloop()
