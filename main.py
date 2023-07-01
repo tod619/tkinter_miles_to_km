@@ -12,7 +12,8 @@ my_label.pack()
 
 
 def button_clicked():
-    print("I got clicked")
+    # print("I got clicked")
+    my_label.config(text="The button was clicked")
 
 
 # Create a btn
