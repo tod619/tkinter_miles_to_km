@@ -6,9 +6,10 @@ from tkinter import *
 # create window
 window = Tk()
 window.title("Miles to Kilometer Converter")
+window.config(padx=20, pady=20)
 
 # Create widgets
-miles_input = Entry()
+miles_input = Entry(width=7)
 miles_input.grid(column=1, row=0)
 
 miles_label = Label(text="Miles")
