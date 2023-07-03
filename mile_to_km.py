@@ -3,6 +3,15 @@
 # 03/07/2023
 from tkinter import *
 
+# Miles to KM function
+
+
+def miles_to_km():
+    miles = float(miles_input.get())
+    km = round(miles * 1.609)
+    kilometer_result_label.config(text=f"{km}")
+
+
 # create window
 window = Tk()
 window.title("Miles to Kilometer Converter")
@@ -25,7 +34,7 @@ kilometer_result_label.grid(column=1, row=1)
 kilometer_label = Label(text="Km")
 kilometer_label.grid(column=2, row=1)
 
-calculate_btn = Button(text="Caluclate")
+calculate_btn = Button(text="Caluclate", command=miles_to_km)
 calculate_btn.grid(column=1, row=2)
 
 
